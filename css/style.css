@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: #1c1c1f;
+}
+
+.container {
+  margin: 0 auto;
+  width: 720px;
+  height: 100vh;
+  background-color: #2b2b32;
+  overflow: auto;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel__body {
+  position: relative;
+  margin: 100px auto 20px auto;
+  width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.carousel__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0;
+  width: 100%;
+  min-height: 85%;
+  background-color: black;
+  -webkit-transition: left ease 0.5s, opacity linear 0.2s;
+  transition: left ease 0.5s, opacity linear 0.2s;
+}
+.carousel__item {
+  position: relative;
+  padding: 0 0 60% 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  cursor: pointer;
+}
+.carousel__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -1.1rem;
+  width: 1rem;
+}
+.carousel__arrow svg {
+  display: block;
+  fill: currentColor;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.4;
+  -webkit-transition: opacity linear 0.2s;
+  transition: opacity linear 0.2s;
+}
+.carousel__arrow svg:hover {
+  opacity: 1;
+}
+.carousel .arrow-left {
+  margin-left: 1rem;
+  padding-top: 1px;
+}
+.carousel .arrow-left svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.carousel .arrow-right {
+  left: 100%;
+  margin-left: -2rem;
+}
+.carousel .arrow-right svg {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.indicator {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  margin-left: -2.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.indicator__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.indicator__item-wrapper {
+  padding: 0.4rem;
+  cursor: pointer;
+  -webkit-transition: opacity linear 0.2s;
+  transition: opacity linear 0.2s;
+  opacity: 0.3;
+}
+.indicator__item-wrapper:first-child {
+  margin-left: -0.4rem;
+}
+.indicator__item-wrapper:last-child {
+  margin-right: -0.4rem;
+}
+.indicator__item-wrapper.active {
+  opacity: 1;
+}
+.indicator__item {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+}

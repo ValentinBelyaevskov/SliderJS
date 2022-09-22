@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>carousel</title>
+   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+
+      <div class="carousel">
+         <div class="carousel__body" id="carousel-body-one">
+            <div class="carousel__line" id="carousel__line">
+
+               <div class="carousel__item" id="first-image">
+                  <img class="carousel__image" src="https://i.pinimg.com/564x/93/60/b6/9360b637768b977fa3b4cb9b17ee49da.jpg" alt="">
+               </div>
+
+               <div class="carousel__item">
+                  <img class="carousel__image" src="https://i.pinimg.com/564x/c6/af/de/c6afdebf1a4ab8f689b4952444cbdb6a.jpg" alt="">
+               </div>
+
+               <div class="carousel__item">
+                  <img class="carousel__image" src="https://i.pinimg.com/564x/24/87/ba/2487ba78f8eeaaacdf508d3d0bbfbf60.jpg" alt="">
+               </div>
+
+               <div class="carousel__item">
+                  <img class="carousel__image" src="https://i.pinimg.com/564x/c4/e6/2a/c4e62a72d467a51292086d4a5c89852a.jpg" alt="">
+               </div>
+
+               <div class="carousel__item">
+                  <img class="carousel__image" src="https://i.pinimg.com/564x/79/13/59/791359284597b535a2640dadc5e5d362.jpg" alt="">
+               </div>
+
+               <div class="carousel__item">
+                  <img class="carousel__image" src="https://i.pinimg.com/564x/9b/87/1f/9b871f6b64e47f20837cdb61081913dc.jpg" alt="">
+               </div>
+
+            </div> <!-- carousel__line -->
+
+            <div class="carousel__arrow arrow-left" data-direction="left">
+               <svg viewBox="10 3 11 25" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path d="M12,25a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L18.59,16l-7.3-7.29a1,1,0,1,1,1.42-1.42l8,8a1,1,0,0,1,0,1.42l-8,8A1,1,0,0,1,12,25Z"/></g><g id="frame"><rect class="cls-1" height="32" width="32"/></g></svg>
+            </div> <!-- carousel__arrow-left -->
+   
+            <div class="carousel__arrow arrow-right" data-direction="right">
+               <svg viewBox="10 3 11 25" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path d="M12,25a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L18.59,16l-7.3-7.29a1,1,0,1,1,1.42-1.42l8,8a1,1,0,0,1,0,1.42l-8,8A1,1,0,0,1,12,25Z"/></g><g id="frame"><rect class="cls-1" height="32" width="32"/></g></svg>
+            </div> <!-- carousel__arrow-rigth -->
+
+            <div class="carousel__indicator indicator" id="carousel__indicator">
+               <div class="indicator__flex">
+
+                  <div class="indicator__item-wrapper active" data-indicator-number="1">
+                     <div class="indicator__item"></div>
+                  </div>
+
+                  <div class="indicator__item-wrapper" data-indicator-number="2">
+                     <div class="indicator__item"></div>
+                  </div>
+
+                  <div class="indicator__item-wrapper" data-indicator-number="3">
+                     <div class="indicator__item"></div>
+                  </div>
+
+                  <div class="indicator__item-wrapper" data-indicator-number="4">
+                     <div class="indicator__item"></div>
+                  </div>
+
+               </div>
+            </div> <!-- carousel__indicator -->
+            
+         </div> <!-- carousel__body -->
+
+      </div> <!-- carousel -->
+
+   </div> <!-- container -->
+
+   <script src="js/main.js"></script>
+</body>
+</html>
